@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Street Grad - PH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="store.js" async></script>
+</head>
+<body>
+    
+<div class="container">
+    <div class="navbar">
+        <div calss="logo">
+            <img src="logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#" onclick="toggleCart()">
+                        <img src="bag.png" class="bag-icon">
+                        <span id="itemCount" class="cartcount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">   
+    </div>
+    
+</div>
+    <div class="main-container">
+        <div class="small-container column1">
+        
+        <div class="row">
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="feat1.jpg"></a>
+                    <h4 class="shop-item-title">Jordan 1 Low 'University Red'</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱6,395</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Jordan 1 Low \'University Red\'', 6395, 'feat1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="feat2.jpg"></a>
+                    <h4 class="shop-item-title">New Balance ‘Sea Salt Black’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱6,995</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('New Balance \'Sea Salt Black\'', 6995, 'feat2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="feat3.jpg"></a>
+                    <h4 class="shop-item-title">Nike Dunk Low ‘Lunar New Year’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱4,695</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Nike Dunk Low \'Lunar New Year\'', 4695, 'feat3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="feat4.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 1 Low ‘Team Gold Sail’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱6,395</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 1 Low \'Team Gold Sail\'', 6395, 'feat4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest1.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 1 Low ‘Denim Swoosh’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱5,595</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 1 Low \'Denim Swoosh\'', 5595, 'latest1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest2.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 1 Low ‘Yellow Ochre’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱6,195</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 1 Low \'Yellow Ochre\'', 6195, 'latest2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest3.jpg"></a>
+                    <h4 class="shop-item-title">Onitsuka Tiger Tokuten ‘White Black Gold’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱7,995</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Onitsuka Tiger Tokuten \'White Black Gold\'', 7995, 'latest3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest4.jpg"></a>
+                    <h4 class="shop-item-title">New Balance 327 ‘Sea Salt Agona’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱6,595</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('New Balance 327 \'Sea Salt Agona\'', 6595, 'latest4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest5.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 2 Low Retro ‘UNC’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱8,895</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 2 Low Retro \'UNC\'', 6595, 'latest5.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest6.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 2 Retro ‘Black Cement’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱9,995</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 2 Retro \'Black Cement\'', 9995, 'latest6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest7.jpg"></a>
+                    <h4 class="shop-item-title">Nike Dunk Low ‘Valerian Blue’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱5,495</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Nike Dunk Low \'Valerian Blue\'', 5495, 'latest7.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shop-item">
+                    <a href="productdetails1.html"><img class="shop-item-image" src="latest8.jpg"></a>
+                    <h4 class="shop-item-title">Air Jordan 1 Low ‘Particle Beige’</h4>
+                    <div class="rating">
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="shop-item-price">₱7,500</p>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Air Jordan 1 Low \'Particle Beige\'', 7500, 'latest8.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+        
+    <div class="small-container cart-page" id="cartContainer" style="display: none;">
+        <p class="cart-ttl">Shopping Cart</p>
+        <table id="cartTable">
+            <tr>
+				<th></th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+            </tr>
+            <!-- Cart items will be dynamically added here -->
+        </table>
+        <p id="cartTotal">Total: ₱0</p>
+        <p id="itemCount"></p>
+        <div id="button"></div>
+        <div id="checkoutbtn"></div>
+    </div>
+    </div>
+           
+    <div class="order-container">
+        <h1>Confirm Your Order</h1>
+        <form name="orderform">
+            <table align="center" cellpadding=5px class="ordertbl">
+                <tr> 
+                    <th><label for="yname">Name:</label></th>
+                    <td><input type="text" name="yname" placeholder="Enter Your Name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="add">Address:</label></th>
+                    <td><input type="text" name="add" placeholder="Enter Your Address" required></td>
+                </tr>
+                <tr>
+                    <th><label for="contact">Contact no.:</label></th>
+                    <td><input type="text" name="contact" placeholder="Enter Your Contact No." required></td>
+                </tr> 
+                <tr>
+                    <th><label for="cash">Cash Given:</label></th>
+                    <td><input type="text" name="cash" placeholder="Enter Amount" required></td>
+                </tr>
+            </table> 
+        </form>
+        <button type="button" onclick="" class="checkoutbtn">Check Out</button>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Available on Android and IOS now.</p>
+                    <div class="app-logo">
+                        <img src="gp.png">
+                        <img src="as.png">
+                    </div>
+                </div>
+                 <div class="footer-col-2">
+                    <img src="logo.jpg">
+                    <p>Street Grad is an online sneaker store based in Metro Manila, Philippines.
+                    All sneakers are guaranteed legit.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Visit our Facebook page:</h3>
+                    <a href="https://www.facebook.com/streetgradph">Street Grad PH</a>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Street Grad PH</p>
+        </div>
+    </div>
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+
+        let cart = [];
+
+        function addToCart(name, price, image) {
+            let existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ name: name, price: price, quantity: 1, image: image }); 
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartTable = document.getElementById("cartTable");
+            let cartTotal = 0;
+                cartTable.innerHTML = `<tr class="p-list">
+                                <th></th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                                <br>
+                            </tr>`;
+                cart.forEach((item, index) => {
+            let subtotal = item.price * item.quantity;
+            cartTotal += subtotal;
+            cartTable.innerHTML += `<tr class="p-list">
+                                    <td><img src="${item.image}" width="50px"></td>
+                                    <td class="p-name">${item.name}</td>
+                                    <td>
+                                        <input type="number" id="quantity${index}" name="quantity${index}" value="${item.quantity}" min="1" max="10" oninput="updateQuantity(${index}, parseInt(this.value, 10))">
+                                    </td>
+                                    <td>₱${subtotal.toLocaleString('en', { minimumFractionDigits: 2 })}</td> <!-- Format subtotal with 2 decimal places and comma -->
+                                    <td><button onclick="removeItem(${index})">Remove</button></td>
+                                </tr>`;
+            });
+            document.getElementById("cartTotal").innerHTML = `<p class="total">Total: ₱${cartTotal.toLocaleString('en', { minimumFractionDigits: 2 })}</p>`;
+            document.getElementById("itemCount").innerText = `${cart.length}`;
+            button.innerHTML = `<center><button class="checkoutbtn" onclick="redirectToConfirm()">Checkout</button></center>`;
+    }
+
+    function redirectToConfirm() {
+        var orderContainer = document.querySelector('.order-container');
+        orderContainer.scrollIntoView({ behavior: "instant" });
+    }
+
+    function checkout() {
+        let name = document.forms["orderform"]["yname"].value;
+        let address = document.forms["orderform"]["add"].value;
+        let contact = document.forms["orderform"]["contact"].value;
+        let cashGiven = parseFloat(document.forms["orderform"]["cash"].value);
+        let cartTotal = parseFloat(document.getElementById("cartTotal").innerText.replace('Total: ₱', '').replace(',', ''));
+        let change = cashGiven - cartTotal;
+
+        if (cart.length === 0) {
+            alert("Your cart is empty. Please add items to proceed with checkout.");
+            return;
+        }
+
+        if (name === "" || address === "" || contact === "" || isNaN(cashGiven) || cashGiven <= 0) {
+            alert("Please fill in all the required fields.");
+            return;
+        }
+
+        let itemDetails = '';
+            cart.forEach((item, index) => {
+            itemDetails += `${index + 1}. ${item.name}\n`;
+        });
+
+        let orderDetails = `Order Successful!\n\nName: ${name}\nAddress: ${address}\nContact: ${contact}\nTotal Price: ₱${cartTotal.toLocaleString('en', { minimumFractionDigits: 2 })}\nCash Given: ₱${cashGiven.toLocaleString('en', { minimumFractionDigits: 2 })}\nChange: ₱${change.toLocaleString('en', { minimumFractionDigits: 2 })}\n\nItems:\n${itemDetails}`;
+
+        alert(orderDetails);
+
+        cart = [];
+        updateCart();
+        document.forms["orderform"].reset();
+    }
+
+    document.querySelector('.checkoutbtn').addEventListener('click', checkout);
+
+    function updateQuantity(index, quantity) {
+        cart[index].quantity = quantity;
+        updateCart();
+    }
+
+    function removeItem(index) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+    function toggleCart() {
+    var cartContainer = document.getElementById("cartContainer");
+    var itemCountCart = document.getElementById("itemCountCart");
+
+    if (cartContainer.style.display === "none") {
+        cartContainer.style.display = "block";
+        itemCountCart.innerText = cart.length;
+        } else {
+        cartContainer.style.display = "none";
+        }
+    }
+
+    </script>
+</body>
+</html>
